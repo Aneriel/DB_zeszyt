@@ -1,0 +1,39 @@
+--select round(876.1264,2);
+--select floor(67.999999);
+--select CEILING(67.0000001);
+--select floor(unitPrice)as cena,unitPrice from Products;
+
+--select abs(-9);
+--select sign(3);
+--select power(4,2)
+--select sqrt(9);
+--select sin(87);
+--select round(RAND()*100,0);
+
+--select GETDATE();
+--SELECT SYSDATETIME();
+--SELECT YEAR(GETDATE())AS Year,MONTH(GETDATE())as month,DAY(GETDATE())as day;
+--SELECT MONTH(GETDATE());
+--SELECT DAY(GETDATE());
+--select * from Orders where year(OrderDate) = 1996 AND month(OrderDate) = 7;
+--select DATEDIFF(second,'2000-09-06',getdate());
+--select dateadd(week,5,getdate()); 
+--select Firstname,Lastname,datediff(year,birthDate,getdate())as Age from Employees order by Age desc;
+--select Firstname,Lastname,datediff(year,birthDate,hiredate)as "Age" from Employees order by Age desc;
+--select datediff(day,RequiredDate,ShippedDate)as dni from Orders where datediff(day,requiredDate,shippeddate)>0order by dni desc;
+--select datename(MICROSECOND,getdate());
+
+--po terminie i ile dni po terminie
+--select sum(UnitPrice) from products;
+--select round(avg(UnitPrice),2) from products;
+--select min(UnitPrice)from products;
+--select max(UnitPrice)from products;
+--select stdev(UnitPrice)from products;
+--select count(productid) from products;
+--select count(distinct city) from customers;
+--select count(SupplierID) from Suppliers;
+--select min(orderdate),max(orderdate) from orders;
+--oblicz srednia wartosc zamowienia
+--select round(avg((((unitPrice*discount)*unitprice)*Quantity)),2) from [Order Details];
+--select avg(orderprice) from [Order Details];
+--select avg(datediff(day,orderdate,ShippedDate)) from Orders;
