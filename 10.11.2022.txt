@@ -1,0 +1,2 @@
+--select round(avg(unitPrice),2) as srednia, CategoryId from Products group by CategoryID;
+--select count(ProductName) as "ilosc roznych produktow", SupplierId from Products where SupplierID != 28 group by SupplierID;
